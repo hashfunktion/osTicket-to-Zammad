@@ -15,5 +15,3 @@ Change as required:
 - State mapping
 - Adress of the osTicket instanz
 - API Adress of Zammad
-
-Translated with www.DeepL.com/Translator (free version)
