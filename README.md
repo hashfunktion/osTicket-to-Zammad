@@ -1,5 +1,5 @@
 # osTicket-to-Zammad
-For the migration of an old osTicket without API to Zammad.
+For the migration of an old osTicket to Zammad.
 
 The files were written for our use and our requirements. The version we found did not yet have API access, so the export had to be done via SQL.
 
