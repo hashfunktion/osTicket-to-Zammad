@@ -16,3 +16,18 @@ Change as required:
 - Adress of the osTicket instanz
 - API Adress of Zammad
 - Zammad Ticket Object for OSTicket Referenz Link to original Ticket
+
+
+1. Export a CSV file with the Tickets from OSTicket
+2. Replace html tags etc. with regex
+``````
+REPLACE ALL HTML TAGS in VS CODE WITH
+<(?!p>|br|bra)[^>]+>
+</?(?!br|p\b)[^>]*>
+&lt; stands for the less-than sign:  <
+&gt; stands for the greater-than sign:  >
+&le; stands for the less-than or equals sign:  ≤
+&ge; stands for the greater-than or equals sign:  ≥
+``````
+4. Edit Mappings in the Python Script (Agents, Groups)
+5. Import Tickets from CSV file with the Python Script via Zammad API
