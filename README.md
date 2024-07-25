@@ -18,8 +18,9 @@ Change as required:
 - Zammad Ticket Object for OSTicket Referenz Link to original Ticket
 
 
-1. Export a CSV file with the Tickets from OSTicket
-2. Replace html tags etc. with regex
+1. Edite WHERE options in SQL Script to take the Tickets you want in the CSV
+2. Export a CSV file with the Tickets from OSTicket
+3. Replace html tags etc. with regex
 ``````
 REPLACE ALL HTML TAGS in VS CODE WITH
 <(?!p>|br|bra)[^>]+>
