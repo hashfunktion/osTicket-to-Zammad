@@ -28,7 +28,6 @@ zammad_token = '<token>'
 csv_file = '<file>'
 
 
-# Funktion zum Erstellen eines Tickets über die Zammad-API
 def create_ticket(payload):
     response = requests.post(zammad_url, headers=headers, json=payload)
     if response.status_code == 201:
@@ -36,18 +35,9 @@ def create_ticket(payload):
     else:
         print(f"Fehler beim Erstellen des Tickets. Statuscode: {response.status_code} - {response.status_code} ")
 
-# Funktion für die Aktion pro Zeile
-def process_row(row):
-    # Hier kannst du die gewünschte Aktion für jede Zeile ausführen
-    print(row)  # Zum Beispiel: Gib die Zeile aus
 
-# Funktion zum Erstellen eines Tickets über die Zammad-API
-def create_ticket(payload):
-    response = requests.post(zammad_url, headers=headers, json=payload)
-    if response.status_code == 201:
-        print(f"Ticket erfolgreich erstellt: {response.json()['number']} - {response.text} ")
-    else:
-        print(f"Fehler beim Erstellen des Tickets. Statuscode: {response.status_code} - {response.text} ")
+def process_row(row):
+    print(row)  # Zum Beispiel: Gib die Zeile aus
 
 
 # Öffnen der CSV-Datei und Verarbeitung der Zeilen
