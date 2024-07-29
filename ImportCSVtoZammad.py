@@ -37,10 +37,10 @@ def create_ticket(payload):
 
 
 def process_row(row):
-    print(row)  # Zum Beispiel: Gib die Zeile aus
+    print(row)
 
 
-# Öffnen der CSV-Datei und Verarbeitung der Zeilen
+
 with open(csv_file, 'r', newline='', encoding='utf-8') as file:
     csv_reader = csv.DictReader(file, delimiter=';')  # Benutzerdefiniertes Trennzeichen
     for row in csv_reader:
