@@ -93,7 +93,7 @@ WHERE
 #    t.ticket_id = 11585
 GROUP BY
     t.ticket_id
-INTO OUTFILE '/share/Public/export050624_final-2.csv'
+INTO OUTFILE '/share/Public/export050624_final.csv'
 FIELDS TERMINATED BY ';'
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\n';
